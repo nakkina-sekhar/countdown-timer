@@ -1,0 +1,124 @@
+ /* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #FF5733, #FFC300);
+    margin: 0;
+    padding: 0;
+    animation: backgroundAnimation 10s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Countdown Container Styles */
+.countdown-container {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: containerAnimation 2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: black solid;
+}
+
+@keyframes containerAnimation {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Title Styles */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Container Styles */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.button-container img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.button-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Countdown Display Styles */
+#countdownDisplay {
+    font-size: 48px;
+    color: #333;
+}
+
+/* Completion Message Styles */
+#completionMessage {
+    font-size: 24px;
+    color: green;
+}
+
+/* Disable Button Styles */
+img[disabled] {
+    filter: grayscale(100%);
+    cursor: not-allowed;
+}
+
+/* Button Animation */
+@keyframes buttonAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+img{
+    background-color: red;
+    border-radius: 50%;
+    
+    
+}
+ 
